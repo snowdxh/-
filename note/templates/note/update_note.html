@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>更新</title>
+</head>
+<body>
+<form action="/note/update/{{ note.id }}" method="post">
+    <p>
+        ID:<input type="text" value="{{ note.id }}" disabled="disabled">
+    </p>
+    <p>
+       标题:<input type="text" value="{{ note.title }}" name="title">
+    </p>
+    <p>
+        内容:<input type="text" value="{{ note.content }}" name="content" style="height:100px;width:200px">
+    </p>
+    <p>
+        <input type="submit" value="更新">
+    </p>
+</form>
+</body>
+</html>
